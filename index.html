@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Praesidion Security - Professionele beveiliging zonder zorgen. Full-service beveiliging met vaste inzet en 100% continuïteitsgarantie voor logistieke centra, zorginstellingen en meer.">
+    <title>Praesidion Security | Professionele Beveiliging Zonder Zorgen</title>
+    <style>
+        :root {
+            --primary: #111;
+            --secondary: #fff;
+            --accent: #C9A13B;
+            --light: #fff;
+            --dark: #000;
+            --gray: #888;
+            --saas-blue: #111;
+            --saas-accent: #C9A13B;
+            --saas-bg: #fff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+                        url('static/security_at_work.png');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 8rem 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            max-width: 800px;
+            margin: 0 auto 2rem;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: var(--accent);
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 0.5rem;
+            text-decoration: none;
+            font-weight: bold;
+            transition: transform 0.2s;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+        }
+
+        /* Sections */
+        section {
+            padding: 5rem 0;
+        }
+
+        section:nth-child(even) {
+            background: var(--light);
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .section-title h2 {
+            color: var(--primary);
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Target Audience */
+        .target-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .target-item {
+            background: white;
+            padding: 2rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .target-item i {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        /* Packages */
+        .packages-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .package-card {
+            background: white;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .package-card h3 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        .package-price {
+            font-size: 1.5rem;
+            color: var(--accent);
+            margin: 1rem 0;
+        }
+
+        .package-features {
+            list-style: none;
+            margin: 1.5rem 0;
+        }
+
+        .package-features li {
+            margin: 0.5rem 0;
+        }
+
+        /* Form */
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            padding: 2rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: var(--dark);
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid var(--gray);
+            border-radius: 0.25rem;
+        }
+
+        .radio-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+            margin-top: 0.5rem;
+        }
+        .radio-option {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--primary);
+            color: white;
+            padding: 3rem 0;
+            text-align: center;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            section {
+                padding: 3rem 0;
+            }
+
+            .section-title h2 {
+                font-size: 2rem;
+            }
+        }
+
+        /* --- SaaS Pakkettenblok --- */
+        #pakketten {
+            background: var(--saas-bg);
+            padding: 4rem 0;
+            font-family: 'Segoe UI', system-ui, sans-serif;
+        }
+        .pakketten-container {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .pakket-card {
+            background: #fff;
+            border-radius: 1.25rem;
+            box-shadow: 0 4px 24px 0 rgba(0,0,0,0.10);
+            padding: 2.5rem 2rem 2rem 2rem;
+            flex: 1 1 320px;
+            max-width: 350px;
+            min-width: 260px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: transform 0.18s cubic-bezier(.4,0,.2,1), box-shadow 0.18s cubic-bezier(.4,0,.2,1);
+            border: 1.5px solid #e3e7f0;
+            margin-bottom: 2rem;
+            position: relative;
+            text-align: center;
+        }
+        .pakket-card:hover {
+            transform: translateY(-8px) scale(1.025);
+            box-shadow: 0 8px 32px 0 rgba(30, 42, 100, 0.16);
+            border-color: var(--saas-accent);
+        }
+        .pakket-card-plus {
+            border: 2.5px solid var(--saas-accent);
+            box-shadow: 0 8px 32px 0 rgba(201, 161, 59, 0.10);
+        }
+        .pakket-icoon {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+        .pakket-card h3 {
+            font-size: 1.35rem;
+            font-weight: 700;
+            color: var(--saas-blue);
+            margin-bottom: 0.25rem;
+            text-align: center;
+        }
+        .pakket-sub {
+            color: #5c6bc0;
+            font-style: italic;
+            font-size: 1rem;
+            margin-bottom: 1.1rem;
+            text-align: center;
+        }
+        .pakket-prijs {
+            font-size: 2.1rem;
+            font-weight: 800;
+            color: var(--saas-accent);
+            margin-bottom: 0.1rem;
+            text-align: center;
+        }
+        .pakket-per {
+            font-size: 1.1rem;
+            font-weight: 400;
+            color: #5c6bc0;
+        }
+        .pakket-exbtw {
+            font-size: 0.95rem;
+            color: #8a8fa7;
+            margin-bottom: 1.1rem;
+            text-align: center;
+        }
+        .pakket-bullets {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 1.1rem 0;
+            width: 100%;
+            text-align: left;
+            display: inline-block;
+        }
+        .pakket-bullets li {
+            color: #26326a;
+            font-size: 1.05rem;
+            margin-bottom: 0.5rem;
+            padding-left: 1.2em;
+            position: relative;
+        }
+        .pakket-bullets li:before {
+            content: '•';
+            color: var(--saas-accent);
+            position: absolute;
+            left: 0;
+            font-size: 1.2em;
+            top: 0;
+        }
+        .pakket-ideaal {
+            font-size: 0.98rem;
+            color: #5c6bc0;
+            margin-bottom: 1.3rem;
+            display: flex;
+            gap: 0.7em;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+        .pakket-ideaal span {
+            font-size: 1.2em;
+            margin-right: 0.2em;
+        }
+        .pakket-btn {
+            display: inline-block;
+            background: var(--saas-accent);
+            color: #111;
+            font-weight: 700;
+            font-size: 1.08rem;
+            border: none;
+            border-radius: 0.6rem;
+            padding: 0.85rem 2.2rem;
+            text-decoration: none;
+            box-shadow: 0 2px 8px 0 rgba(201, 161, 59, 0.10);
+            transition: background 0.15s, color 0.15s, box-shadow 0.15s, transform 0.15s;
+            cursor: pointer;
+            margin-top: auto;
+        }
+        .pakket-btn:hover, .pakket-btn:focus {
+            background: #111;
+            color: var(--saas-accent);
+            box-shadow: 0 4px 16px 0 rgba(0,0,0,0.16);
+            transform: translateY(-2px) scale(1.04);
+        }
+        .pakket-btn-plus {
+            background: #fff;
+            color: var(--saas-accent);
+            border: 2px solid var(--saas-accent);
+        }
+        .pakket-btn-plus:hover, .pakket-btn-plus:focus {
+            background: var(--saas-accent);
+            color: #111;
+        }
+        @media (max-width: 900px) {
+            .pakketten-container {
+                flex-direction: column;
+                align-items: center;
+                gap: 0;
+            }
+            .pakket-card {
+                max-width: 95vw;
+                margin-bottom: 2.5rem;
+            }
+            .pakket-bullets {
+                text-align: left;
+                margin-left: auto;
+                margin-right: auto;
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <h1>Beveiliging zonder zorgen. Full-Service. Altijd geregeld.</h1>
+            <p>Professionele beveiligers met vaste inzet en 100% continuïteitsgarantie. Inclusief planning, rapportage en vervanging bij uitval.</p>
+            <a href="#contact" class="cta-button">Ontvang binnen 1 werkdag een voorstel</a>
+        </div>
+    </section>
+
+    <!-- Target Audience -->
+    <section id="target-audience">
+        <div class="container">
+            <div class="section-title">
+                <h2>Voor Wie?</h2>
+                <p>Praesidion is er voor organisaties waar veiligheid structureel gewaarborgd moet zijn.</p>
+            </div>
+            <div class="target-grid">
+                <div class="target-item">
+                    <i>🏭</i>
+                    <h3>Logistieke bedrijven & distributiecentra</h3>
+                </div>
+                <div class="target-item">
+                    <i>🏥</i>
+                    <h3>Zorginstellingen & maatschappelijke opvang</h3>
+                </div>
+                <div class="target-item">
+                    <i>🏢</i>
+                    <h3>Kantoorparken & culturele instellingen</h3>
+                </div>
+                <div class="target-item">
+                    <i>🏗️</i>
+                    <h3>Bouw & infrastructuurprojecten</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Packages -->
+    <section id="pakketten" style="background:#f5f7fa;padding:4rem 0;">
+      <div class="pakketten-container">
+        <div class="pakket-card" data-pakket="start">
+          <div class="pakket-icoon">🔰</div>
+          <h3>Praesidion Start</h3>
+          <div class="pakket-sub">Voor kleine locaties & starters</div>
+          <div class="pakket-prijs">€9.999 <span class="pakket-per">/maand</span></div>
+          <div class="pakket-exbtw">*ex-btw</div>
+          <ul class="pakket-bullets">
+            <li>Vaste beveiligers, altijd inzetbaar</li>
+            <li>Basis rapportage & planning</li>
+            <li>Vervanging bij ziekte gegarandeerd</li>
+            <li>24/7 bereikbaar</li>
+          </ul>
+          <div class="pakket-ideaal">
+            <span>🏢</span> Kantoor
+            <span>🏥</span> Zorg
+            <span>🏗️</span> Bouw
+          </div>
+          <a href="#contact" class="pakket-btn">Kies Start</a>
+        </div>
+        <div class="pakket-card pakket-card-plus" data-pakket="plus">
+          <div class="pakket-icoon">🛡️</div>
+          <h3>Praesidion Plus</h3>
+          <div class="pakket-sub">Voor groeiende organisaties</div>
+          <div class="pakket-prijs">€19.999 <span class="pakket-per">/maand</span></div>
+          <div class="pakket-exbtw">*ex-btw</div>
+          <ul class="pakket-bullets">
+            <li>Intensieve objectbewaking</li>
+            <li>Uitgebreide rapportage</li>
+            <li>Directe vervanging & back-up</li>
+            <li>Eigen contactpersoon</li>
+          </ul>
+          <div class="pakket-ideaal">
+            <span>🏬</span> Logistiek
+            <span>🏢</span> Kantoor
+            <span>🎭</span> Cultuur
+          </div>
+          <a href="#contact" class="pakket-btn pakket-btn-plus">Kies Plus</a>
+        </div>
+        <div class="pakket-card" data-pakket="ultra">
+          <div class="pakket-icoon">🚨</div>
+          <h3>Praesidion Ultra</h3>
+          <div class="pakket-sub">Voor maximale zekerheid & 24/7 inzet</div>
+          <div class="pakket-prijs">€45.999 <span class="pakket-per">/maand</span></div>
+          <div class="pakket-exbtw">*ex-btw</div>
+          <ul class="pakket-bullets">
+            <li>24/7 premium beveiliging</li>
+            <li>Meerdere vaste teams</li>
+            <li>Premium rapportage & advies</li>
+            <li>Spoedinzet & alarmopvolging</li>
+          </ul>
+          <div class="pakket-ideaal">
+            <span>🏢</span> Grootbedrijf
+            <span>🏬</span> Distributie
+            <span>🏥</span> Zorg
+          </div>
+          <a href="#contact" class="pakket-btn">Kies Ultra</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Praesidion -->
+    <section id="why-praesidion">
+        <div class="container">
+            <div class="section-title">
+                <h2>Waarom Praesidion?</h2>
+            </div>
+            <div class="target-grid">
+                <div class="target-item">
+                    <i>✅</i>
+                    <h3>Vergunning Ministerie Justitie & Veiligheid (ND6250)</h3>
+                </div>
+                <div class="target-item">
+                    <i>⏰</i>
+                    <h3>Back-up gegarandeerd binnen 24 uur</h3>
+                </div>
+                <div class="target-item">
+                    <i>👥</i>
+                    <h3>Personeel met Vergunning, BHV, VCA en representatieve uitstraling</h3>
+                </div>
+                <div class="target-item">
+                    <i>🤝</i>
+                    <h3>Dé partner voor MKB en Grootbedrijven in de regio</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Vraag een Voorstel Aan</h2>
+            </div>
+            <form class="contact-form" action="/api/intake" method="POST" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="company">Bedrijfsnaam</label>
+                    <input type="text" id="company" name="company" required>
+                </div>
+                <div class="form-group">
+                    <label for="location">Locatie</label>
+                    <input type="text" id="location" name="location" required>
+                </div>
+                <div class="form-group">
+                    <label for="deployment">Gewenste inzet</label>
+                    <select id="deployment" name="deployment" required>
+                        <option value="office">Kantooruren</option>
+                        <option value="nights">Nacht</option>
+                        <option value="weekend">Weekend</option>
+                        <option value="24-7">24/7</option>
+                        <option value="other">Anders</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Pakketvoorkeur</label>
+                    <table style="border-collapse:collapse;width:auto;margin-top:0.5rem;">
+                        <tr>
+                            <td style="padding:0.5rem 1rem 0.5rem 0;vertical-align:middle;">
+                                <input type="radio" id="pakket-start" name="package" value="start" required>
+                            </td>
+                            <td style="padding:0.5rem 0;vertical-align:middle;">
+                                <label for="pakket-start">Praesidion Start</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding:0.5rem 1rem 0.5rem 0;vertical-align:middle;">
+                                <input type="radio" id="pakket-plus" name="package" value="plus">
+                            </td>
+                            <td style="padding:0.5rem 0;vertical-align:middle;">
+                                <label for="pakket-plus">Praesidion Plus</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding:0.5rem 1rem 0.5rem 0;vertical-align:middle;">
+                                <input type="radio" id="pakket-ultra" name="package" value="ultra">
+                            </td>
+                            <td style="padding:0.5rem 0;vertical-align:middle;">
+                                <label for="pakket-ultra">Praesidion Ultra</label>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="form-group">
+                    <label for="name">Naam contactpersoon</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mailadres</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Telefoonnummer</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="toelichting">Toelichting (optioneel)</label>
+                    <textarea id="toelichting" name="toelichting" rows="5" placeholder="Vul hier extra informatie in..."></textarea>
+                </div>
+                <button type="submit" class="cta-button">Stuur aanvraag in</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <h3>Contact</h3>
+                    <p>Praesidion Security</p>
+                    <p>info@praesidion.nl</p>
+                    <p>+31(0)462402401</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#">Privacyverklaring</a>
+                    <a href="https://linkedin.com/company/praesidion" target="_blank">LinkedIn</a>
+                </div>
+            </div>
+            <p>© Praesidion Security – Professionele beveiliging zonder zorgen</p>
+        </div>
+    </footer>
+
+    <script>
+    // Koppeling pakkettenblok -> formulier radio
+    document.addEventListener('DOMContentLoaded', function() {
+      document.querySelectorAll('.pakket-btn').forEach(function(btn) {
+        btn.addEventListener('click', function(e) {
+          var pakket = btn.closest('.pakket-card').getAttribute('data-pakket');
+          var radio = document.getElementById('pakket-' + pakket);
+          if (radio) {
+            radio.checked = true;
+            // Scroll naar formulier
+            var form = document.getElementById('contact');
+            if (form) {
+              form.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+          }
+        });
+      });
+    });
+    </script>
+</body>
+</html> 
