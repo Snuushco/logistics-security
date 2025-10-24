@@ -172,7 +172,36 @@
             margin: 0.5rem 0;
         }
 
-        /* Form */
+        /* Contact Form - Softr iframe */
+        #contact {
+            padding: 5rem 0 0 0;
+        }
+
+        #contact .section-title {
+            padding: 0 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .iframe-container {
+            width: 100vw;
+            position: relative;
+            left: 50%;
+            right: 50%;
+            margin-left: -50vw;
+            margin-right: -50vw;
+            aspect-ratio: 16/9;
+            min-height: 600px;
+            max-height: 100vh;
+        }
+
+        #softr-embed {
+            width: 100%;
+            height: 100%;
+            border: none;
+            background: white;
+        }
+
+        /* Legacy form styles (behouden voor eventuele toekomstige gebruik) */
         .contact-form {
             max-width: 600px;
             margin: 0 auto;
@@ -235,6 +264,12 @@
         }
 
         /* Responsive Design */
+        @media (max-width: 1200px) {
+            .iframe-container {
+                aspect-ratio: 16/10;
+            }
+        }
+
         @media (max-width: 768px) {
             .hero-logo {
                 max-width: 250px;
@@ -258,6 +293,25 @@
 
             .section-title h2 {
                 font-size: 2rem;
+            }
+
+            .iframe-container {
+                aspect-ratio: 4/3;
+                min-height: 500px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .iframe-container {
+                aspect-ratio: 1/1;
+                min-height: 400px;
+            }
+        }
+
+        @media (orientation: landscape) and (max-height: 600px) {
+            .iframe-container {
+                aspect-ratio: 21/9;
+                min-height: 300px;
             }
         }
 
@@ -566,75 +620,11 @@
 
     <!-- Contact Form -->
     <section id="contact">
-        <div class="container">
-            <div class="section-title">
-                <h2>Vraag een Voorstel Aan</h2>
-            </div>
-            <form class="contact-form" action="/api/intake" method="POST" enctype="multipart/form-data">
-                <div class="form-group">
-                    <label for="company">Bedrijfsnaam</label>
-                    <input type="text" id="company" name="company" required>
-                </div>
-                <div class="form-group">
-                    <label for="location">Locatie</label>
-                    <input type="text" id="location" name="location" required>
-                </div>
-                <div class="form-group">
-                    <label for="deployment">Gewenste inzet</label>
-                    <select id="deployment" name="deployment" required>
-                        <option value="dag">Dag</option>
-                        <option value="nacht">Nacht</option>
-                        <option value="24-7">24/7</option>
-                        <option value="other">Anders</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label>Pakketvoorkeur</label>
-                    <table style="border-collapse:collapse;width:auto;margin-top:0.5rem;">
-                        <tr>
-                            <td style="padding:0.5rem 1rem 0.5rem 0;vertical-align:middle;">
-                                <input type="radio" id="pakket-start" name="package" value="start" required>
-                            </td>
-                            <td style="padding:0.5rem 0;vertical-align:middle;">
-                                <label for="pakket-start">Praesidion DagVeilig</label>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td style="padding:0.5rem 1rem 0.5rem 0;vertical-align:middle;">
-                                <input type="radio" id="pakket-plus" name="package" value="plus">
-                            </td>
-                            <td style="padding:0.5rem 0;vertical-align:middle;">
-                                <label for="pakket-plus">Praesidion NachtVeilig</label>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td style="padding:0.5rem 1rem 0.5rem 0;vertical-align:middle;">
-                                <input type="radio" id="pakket-ultra" name="package" value="ultra">
-                            </td>
-                            <td style="padding:0.5rem 0;vertical-align:middle;">
-                                <label for="pakket-ultra">Praesidion 24/7 Veilig</label>
-                            </td>
-                        </tr>
-                    </table>
-                </div>
-                <div class="form-group">
-                    <label for="name">Naam contactpersoon</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">E-mailadres</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="phone">Telefoonnummer</label>
-                    <input type="tel" id="phone" name="phone" required>
-                </div>
-                <div class="form-group">
-                    <label for="toelichting">Toelichting (optioneel)</label>
-                    <textarea id="toelichting" name="toelichting" rows="5" placeholder="Vul hier extra informatie in..."></textarea>
-                </div>
-                <button type="submit" class="cta-button">Stuur aanvraag in</button>
-            </form>
+        <div class="section-title">
+            <h2>Vraag een Voorstel Aan</h2>
+        </div>
+        <div class="iframe-container">
+            <iframe id="softr-embed" src="https://fullservice.praesidion.eu" frameborder="0" style="border:none;" scrolling="no"></iframe>
         </div>
     </section>
 
@@ -658,20 +648,19 @@
         </div>
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.2.11/iframeResizer.min.js"></script>
     <script>
-    // Koppeling pakkettenblok -> formulier radio
+    // iFrame Resizer voor Softr embed
+    iFrameResize({ checkOrigin: false }, '#softr-embed');
+    
+    // Koppeling pakkettenblok -> formulier (scroll naar contact sectie)
     document.addEventListener('DOMContentLoaded', function() {
       document.querySelectorAll('.pakket-btn').forEach(function(btn) {
         btn.addEventListener('click', function(e) {
-          var pakket = btn.closest('.pakket-card').getAttribute('data-pakket');
-          var radio = document.getElementById('pakket-' + pakket);
-          if (radio) {
-            radio.checked = true;
-            // Scroll naar formulier
-            var form = document.getElementById('contact');
-            if (form) {
-              form.scrollIntoView({ behavior: 'smooth', block: 'start' });
-            }
+          // Scroll naar contact sectie
+          var contactSection = document.getElementById('contact');
+          if (contactSection) {
+            contactSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
           }
         });
       });
