@@ -48,6 +48,26 @@
             text-align: center;
         }
 
+        .hero-branding {
+            margin-bottom: 3rem;
+        }
+
+        .hero-logo {
+            max-width: 300px;
+            width: 100%;
+            height: auto;
+            margin-bottom: 1rem;
+            filter: brightness(1.1) contrast(1.1);
+        }
+
+        .hero-company-name {
+            font-size: 1.5rem;
+            font-weight: 300;
+            color: var(--accent);
+            margin: 0;
+            letter-spacing: 0.5px;
+        }
+
         .hero h1 {
             font-size: 3rem;
             margin-bottom: 1.5rem;
@@ -216,6 +236,14 @@
 
         /* Responsive Design */
         @media (max-width: 768px) {
+            .hero-logo {
+                max-width: 250px;
+            }
+
+            .hero-company-name {
+                font-size: 1.25rem;
+            }
+
             .hero h1 {
                 font-size: 2rem;
             }
@@ -400,8 +428,12 @@
     <!-- Hero Section -->
     <section class="hero" id="home">
         <div class="container">
-            <h1>Beveiliging zonder zorgen. Full-Service. Altijd geregeld.</h1>
-            <p>Professionele beveiligers met vaste inzet en 100% continuïteitsgarantie. Inclusief planning, rapportage en vervanging bij uitval.</p>
+            <div class="hero-branding">
+                <img src="static/logo_praesidion_horizontal.png" alt="Praesidion Security logo" class="hero-logo">
+                <h2 class="hero-company-name">Praesidion Security B.V.</h2>
+            </div>
+            <h1>Full-Service Beveiliging. Altijd goed geregeld.</h1>
+            <p>Professionele beveiligers met vaste inzet, coördinatie en 100% continuïteitsgarantie. Inclusief planning, rapportage en vervanging bij uitval.</p>
             <a href="#contact" class="cta-button">Ontvang binnen 1 werkdag een voorstel</a>
         </div>
     </section>
@@ -437,62 +469,70 @@
     <!-- Packages -->
     <section id="pakketten" style="background:#f5f7fa;padding:4rem 0;">
       <div class="pakketten-container">
-        <div class="pakket-card" data-pakket="start">
+        <div class="pakket-card" data-pakket="DagVeilig">
           <div class="pakket-icoon">🔰</div>
-          <h3>Praesidion Start</h3>
-          <div class="pakket-sub">Voor kleine locaties & starters</div>
-          <div class="pakket-prijs">€9.999 <span class="pakket-per">/maand</span></div>
+          <h3>Praesidion DagVeilig</h3>
+          <div class="pakket-sub">Voor beveiliging tijdens kantooruren (07:00 - 17:00)</div>
+          <div class="pakket-prijs">v.a €10.000 <span class="pakket-per">/maand</span></div>
           <div class="pakket-exbtw">*ex-btw</div>
           <ul class="pakket-bullets">
             <li>Vaste beveiligers, altijd inzetbaar</li>
-            <li>Basis rapportage & planning</li>
+            <li>Rapportage & planning</li>
             <li>Vervanging bij ziekte gegarandeerd</li>
-            <li>24/7 bereikbaar</li>
+            <li>Eigen objectcoördinator & contactpersoon</li>
           </ul>
           <div class="pakket-ideaal">
             <span>🏢</span> Kantoor
             <span>🏥</span> Zorg
+            <span>🏭</span> Logistiek
             <span>🏗️</span> Bouw
           </div>
-          <a href="#contact" class="pakket-btn">Kies Start</a>
+          <a href="#contact" class="pakket-btn">Kies Praesidion DagVeilig</a>
         </div>
-        <div class="pakket-card pakket-card-plus" data-pakket="plus">
+        <div class="pakket-card pakket-card-plus" data-pakket="NachtVeilig">
           <div class="pakket-icoon">🛡️</div>
-          <h3>Praesidion Plus</h3>
-          <div class="pakket-sub">Voor groeiende organisaties</div>
-          <div class="pakket-prijs">€19.999 <span class="pakket-per">/maand</span></div>
+          <h3>Praesidion NachtVeilig</h3>
+          <div class="pakket-sub">Voor beveiliging tijdens nachturen</div>
+          <div class="pakket-prijs">v.a €20.000 <span class="pakket-per">/maand</span></div>
           <div class="pakket-exbtw">*ex-btw</div>
           <ul class="pakket-bullets">
-            <li>Intensieve objectbewaking</li>
-            <li>Uitgebreide rapportage</li>
+            <li>Nachtelijke objectbewaking</li>
+            <li>Rapportage & planning</li>
             <li>Directe vervanging & back-up</li>
-            <li>Eigen contactpersoon</li>
+            <li>Eigen objectcoördinator & contactpersoon</li>
           </ul>
           <div class="pakket-ideaal">
-            <span>🏬</span> Logistiek
-            <span>🏢</span> Kantoor
+            <span>🏬</span> Logistiek & industrie
+            <span>🏥</span> Zorg
             <span>🎭</span> Cultuur
+            <span>🏗️</span> Bouw & infra
           </div>
-          <a href="#contact" class="pakket-btn pakket-btn-plus">Kies Plus</a>
+          <a href="#contact" class="pakket-btn pakket-btn-plus">Kies Praesidion NachtVeilig</a>
         </div>
-        <div class="pakket-card" data-pakket="ultra">
+        <div class="pakket-card" data-pakket="24/7 Veilig">
           <div class="pakket-icoon">🚨</div>
-          <h3>Praesidion Ultra</h3>
+          <h3>Praesidion 24/7 Veilig</h3>
           <div class="pakket-sub">Voor maximale zekerheid & 24/7 inzet</div>
-          <div class="pakket-prijs">€45.999 <span class="pakket-per">/maand</span></div>
+          <div class="pakket-prijs">v.a €45.000 <span class="pakket-per">/maand</span></div>
           <div class="pakket-exbtw">*ex-btw</div>
           <ul class="pakket-bullets">
             <li>24/7 premium beveiliging</li>
-            <li>Meerdere vaste teams</li>
-            <li>Premium rapportage & advies</li>
-            <li>Spoedinzet & alarmopvolging</li>
+            <li>Vaste teams</li>
+            <li>Premium rapportage & planning</li>
+            <li>Security Consultancy & advies</li>
+            <li>Eigen coördinator per object met één vast aanspreekpunt</li>
           </ul>
           <div class="pakket-ideaal">
             <span>🏢</span> Grootbedrijf
-            <span>🏬</span> Distributie
-            <span>🏥</span> Zorg
+            <span>🏬</span> Logistiek & Distributie
+            <span>🏥</span> Zorg & maatschappelijke opvang
+            <span>🏭</span> Industrie
+            <span>🏗️</span> Bouw & infra
+            <span>🎭</span> Evenementen
+            <span>🏢</span> Headquarters
+            <span>💻</span> Datacenters
           </div>
-          <a href="#contact" class="pakket-btn">Kies Ultra</a>
+          <a href="#contact" class="pakket-btn">Kies Praesidion 24/7 Veilig</a>
         </div>
       </div>
     </section>
@@ -506,11 +546,11 @@
             <div class="target-grid">
                 <div class="target-item">
                     <i>✅</i>
-                    <h3>Vergunning Ministerie Justitie & Veiligheid (ND6250)</h3>
+                    <h3>Vergunning Ministerie Justitie & Veiligheid (ND8968)</h3>
                 </div>
                 <div class="target-item">
                     <i>⏰</i>
-                    <h3>Back-up gegarandeerd binnen 24 uur</h3>
+                    <h3>Back-up gegarandeerd met 100% continuïteitsgarantie</h3>
                 </div>
                 <div class="target-item">
                     <i>👥</i>
@@ -518,7 +558,7 @@
                 </div>
                 <div class="target-item">
                     <i>🤝</i>
-                    <h3>Dé partner voor MKB en Grootbedrijven in de regio</h3>
+                    <h3>Dé partner voor MKB en Grootbedrijven in uw regio</h3>
                 </div>
             </div>
         </div>
@@ -542,9 +582,8 @@
                 <div class="form-group">
                     <label for="deployment">Gewenste inzet</label>
                     <select id="deployment" name="deployment" required>
-                        <option value="office">Kantooruren</option>
-                        <option value="nights">Nacht</option>
-                        <option value="weekend">Weekend</option>
+                        <option value="dag">Dag</option>
+                        <option value="nacht">Nacht</option>
                         <option value="24-7">24/7</option>
                         <option value="other">Anders</option>
                     </select>
@@ -557,7 +596,7 @@
                                 <input type="radio" id="pakket-start" name="package" value="start" required>
                             </td>
                             <td style="padding:0.5rem 0;vertical-align:middle;">
-                                <label for="pakket-start">Praesidion Start</label>
+                                <label for="pakket-start">Praesidion DagVeilig</label>
                             </td>
                         </tr>
                         <tr>
@@ -565,7 +604,7 @@
                                 <input type="radio" id="pakket-plus" name="package" value="plus">
                             </td>
                             <td style="padding:0.5rem 0;vertical-align:middle;">
-                                <label for="pakket-plus">Praesidion Plus</label>
+                                <label for="pakket-plus">Praesidion NachtVeilig</label>
                             </td>
                         </tr>
                         <tr>
@@ -573,7 +612,7 @@
                                 <input type="radio" id="pakket-ultra" name="package" value="ultra">
                             </td>
                             <td style="padding:0.5rem 0;vertical-align:middle;">
-                                <label for="pakket-ultra">Praesidion Ultra</label>
+                                <label for="pakket-ultra">Praesidion 24/7 Veilig</label>
                             </td>
                         </tr>
                     </table>
@@ -606,16 +645,16 @@
                 <div>
                     <img src="static/logo_praesidion_horizontal.png" alt="Praesidion Security logo" style="width:240px;max-width:100%;margin-bottom:1rem;">
                     <h3>Contact</h3>
-                    <p>Praesidion Security</p>
+                    <p>Praesidion Security B.V.</p>
                     <p>info@praesidion.nl</p>
-                    <p>+31(0)462402401</p>
+                    <p>+31 46 240 2401</p>
                 </div>
                 <div class="footer-links">
                     <a href="#">Privacyverklaring</a>
                     <a href="https://linkedin.com/company/praesidion" target="_blank">LinkedIn</a>
                 </div>
             </div>
-            <p>© Praesidion Security – Professionele beveiliging zonder zorgen</p>
+            <p>© Praesidion Security B.V. – Professionele beveiliging zonder zorgen</p>
         </div>
     </footer>
 
