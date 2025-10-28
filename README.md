@@ -1,2 +1,2 @@
-# fullservice-praesidion
-Full Service landingspage van Praesidion Security
+# logistics-security
+Landingspage voor Logistics Security - Gespecialiseerde beveiliging voor transport & logistiek

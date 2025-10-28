@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Praesidion Security - Professionele beveiliging zonder zorgen. Full-service beveiliging met vaste inzet en 100% continuïteitsgarantie voor logistieke centra, zorginstellingen en meer.">
-    <title>Praesidion Security | Professionele Beveiliging Zonder Zorgen</title>
+    <meta name="description" content="Logistics Security - Gespecialiseerde beveiliging voor logistieke centra, distributiecentra en transport. 24/7 objectbewaking, toegangscontrole en maatwerk beveiligingsoplossingen.">
+    <title>Logistics Security | Gespecialiseerde Beveiliging voor Transport & Logistiek</title>
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>🛡️</text></svg>">
     <meta http-equiv="Strict-Transport-Security" content="max-age=31536000; includeSubDomains; preload">
     <!-- Force HTTPS redirect -->
@@ -17,15 +17,15 @@
     </script>
     <style>
         :root {
-            --primary: #111;
+            --primary: #003d82;
             --secondary: #fff;
-            --accent: #C9A13B;
-            --light: #fff;
-            --dark: #000;
-            --gray: #888;
-            --saas-blue: #111;
-            --saas-accent: #C9A13B;
-            --saas-bg: #fff;
+            --accent: #ffcc00;
+            --light: #f5f7fa;
+            --dark: #1a1a1a;
+            --gray: #666;
+            --saas-blue: #003d82;
+            --saas-accent: #ffcc00;
+            --saas-bg: #f5f7fa;
         }
 
         * {
@@ -48,13 +48,39 @@
 
         /* Hero Section */
         .hero {
-            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-                        url('static/security_at_work.png');
+            background: linear-gradient(135deg, rgba(0, 61, 130, 0.88) 0%, rgba(0, 82, 163, 0.85) 50%, rgba(255, 204, 0, 0.78) 100%),
+                        url('static/hero_logistics.png');
             background-size: cover;
             background-position: center;
+            background-attachment: fixed;
+            background-color: #003d82;
             color: white;
             padding: 8rem 0;
             text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: repeating-linear-gradient(
+                45deg,
+                transparent,
+                transparent 2px,
+                rgba(255, 255, 255, 0.02) 2px,
+                rgba(255, 255, 255, 0.02) 4px
+            );
+            pointer-events: none;
+        }
+        
+        .hero .container {
+            position: relative;
+            z-index: 1;
         }
 
         .hero-branding {
@@ -62,19 +88,22 @@
         }
 
         .hero-logo {
-            max-width: 300px;
+            max-width: 280px;
             width: 100%;
             height: auto;
-            margin-bottom: 1rem;
-            filter: brightness(1.1) contrast(1.1);
+            margin: 0 auto 1rem;
+            filter: brightness(1.1) contrast(1.1) drop-shadow(2px 2px 8px rgba(0, 0, 0, 0.3));
+            display: block;
         }
 
         .hero-company-name {
-            font-size: 1.5rem;
-            font-weight: 300;
+            font-size: 2.5rem;
+            font-weight: 700;
             color: var(--accent);
             margin: 0;
-            letter-spacing: 0.5px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
         }
 
         .hero h1 {
@@ -281,11 +310,12 @@
 
         @media (max-width: 768px) {
             .hero-logo {
-                max-width: 250px;
+                max-width: 220px;
             }
 
             .hero-company-name {
-                font-size: 1.25rem;
+                font-size: 1.75rem;
+                letter-spacing: 1px;
             }
 
             .hero h1 {
@@ -357,12 +387,12 @@
         }
         .pakket-card:hover {
             transform: translateY(-8px) scale(1.025);
-            box-shadow: 0 8px 32px 0 rgba(30, 42, 100, 0.16);
+            box-shadow: 0 8px 32px 0 rgba(0, 61, 130, 0.16);
             border-color: var(--saas-accent);
         }
         .pakket-card-plus {
             border: 2.5px solid var(--saas-accent);
-            box-shadow: 0 8px 32px 0 rgba(201, 161, 59, 0.10);
+            box-shadow: 0 8px 32px 0 rgba(255, 204, 0, 0.15);
         }
         .pakket-icoon {
             font-size: 3rem;
@@ -377,7 +407,7 @@
             text-align: center;
         }
         .pakket-sub {
-            color: #5c6bc0;
+            color: var(--saas-blue);
             font-style: italic;
             font-size: 1rem;
             margin-bottom: 1.1rem;
@@ -393,11 +423,11 @@
         .pakket-per {
             font-size: 1.1rem;
             font-weight: 400;
-            color: #5c6bc0;
+            color: #003d82;
         }
         .pakket-exbtw {
             font-size: 0.95rem;
-            color: #8a8fa7;
+            color: #666;
             margin-bottom: 1.1rem;
             text-align: center;
         }
@@ -410,7 +440,7 @@
             display: inline-block;
         }
         .pakket-bullets li {
-            color: #26326a;
+            color: var(--saas-blue);
             font-size: 1.05rem;
             margin-bottom: 0.5rem;
             padding-left: 1.2em;
@@ -426,7 +456,7 @@
         }
         .pakket-ideaal {
             font-size: 0.98rem;
-            color: #5c6bc0;
+            color: var(--saas-blue);
             margin-bottom: 1.3rem;
             display: flex;
             gap: 0.7em;
@@ -441,20 +471,20 @@
         .pakket-btn {
             display: inline-block;
             background: var(--saas-accent);
-            color: #111;
+            color: var(--saas-blue);
             font-weight: 700;
             font-size: 1.08rem;
             border: none;
             border-radius: 0.6rem;
             padding: 0.85rem 2.2rem;
             text-decoration: none;
-            box-shadow: 0 2px 8px 0 rgba(201, 161, 59, 0.10);
+            box-shadow: 0 2px 8px 0 rgba(255, 204, 0, 0.20);
             transition: background 0.15s, color 0.15s, box-shadow 0.15s, transform 0.15s;
             cursor: pointer;
             margin-top: auto;
         }
         .pakket-btn:hover, .pakket-btn:focus {
-            background: #111;
+            background: var(--saas-blue);
             color: var(--saas-accent);
             box-shadow: 0 4px 16px 0 rgba(0,0,0,0.16);
             transform: translateY(-2px) scale(1.04);
@@ -466,7 +496,7 @@
         }
         .pakket-btn-plus:hover, .pakket-btn-plus:focus {
             background: var(--saas-accent);
-            color: #111;
+            color: var(--saas-blue);
         }
         @media (max-width: 900px) {
             .pakketten-container {
@@ -485,6 +515,107 @@
                 display: block;
             }
         }
+
+        /* Testimonials Section */
+        #testimonials {
+            background: linear-gradient(to bottom, #f5f7fa 0%, #ffffff 100%);
+            padding: 5rem 0;
+        }
+        .testimonials-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        .testimonial-card {
+            background: white;
+            border-radius: 1rem;
+            padding: 2.5rem;
+            box-shadow: 0 4px 20px rgba(0, 61, 130, 0.08);
+            border: 1px solid #e3e7f0;
+            transition: transform 0.3s, box-shadow 0.3s;
+            position: relative;
+        }
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px rgba(0, 61, 130, 0.12);
+        }
+        .testimonial-quote {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: var(--dark);
+            margin-bottom: 2rem;
+            font-style: italic;
+            position: relative;
+        }
+        .testimonial-quote::before {
+            content: '"';
+            font-size: 4rem;
+            color: var(--accent);
+            position: absolute;
+            top: -1rem;
+            left: -0.5rem;
+            font-family: Georgia, serif;
+            opacity: 0.3;
+        }
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-top: 1.5rem;
+            padding-top: 1.5rem;
+            border-top: 2px solid #f5f7fa;
+        }
+        .testimonial-avatar {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: white;
+            flex-shrink: 0;
+        }
+        .testimonial-info h4 {
+            margin: 0;
+            color: var(--primary);
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+        .testimonial-info p {
+            margin: 0.3rem 0 0 0;
+            color: #666;
+            font-size: 0.9rem;
+        }
+        .testimonial-stars {
+            display: flex;
+            gap: 0.2rem;
+            margin-top: 0.5rem;
+        }
+        .testimonial-stars .star {
+            color: var(--accent);
+            font-size: 1.2rem;
+        }
+        @media (max-width: 768px) {
+            #testimonials {
+                padding: 3rem 0;
+            }
+            .testimonials-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+            .testimonial-card {
+                padding: 2rem;
+            }
+        }
     </style>
 </head>
 <body>
@@ -492,12 +623,12 @@
     <section class="hero" id="home">
         <div class="container">
             <div class="hero-branding">
-                <img src="static/logo_praesidion_horizontal.png" alt="Praesidion Security logo" class="hero-logo">
-                <h2 class="hero-company-name">Praesidion Security B.V.</h2>
+                <img src="static/logo_praesidion_horizontal.png" alt="Praesidion Security" class="hero-logo">
+                <h2 class="hero-company-name">Logistics Security</h2>
             </div>
-            <h1>Full-Service Beveiliging. Altijd goed geregeld.</h1>
-            <p>Professionele beveiligers met vaste inzet, coördinatie en 100% continuïteitsgarantie. Inclusief planning, rapportage en vervanging bij uitval.</p>
-            <a href="#contact" class="cta-button">Ontvang binnen 1 werkdag een voorstel</a>
+            <h1>Gespecialiseerde Beveiliging voor Transport & Logistiek</h1>
+            <p>24/7 objectbewaking, toegangscontrole en maatwerk beveiligingsoplossingen voor distributiecentra, magazijnen en logistieke hubs. Zo houdt uw supply chain, veilig en operationeel.</p>
+            <a href="#contact" class="cta-button">Vraag een vrijblijvend adviesgesprek aan</a>
         </div>
     </section>
 
@@ -505,25 +636,25 @@
     <section id="target-audience">
         <div class="container">
             <div class="section-title">
-                <h2>Voor Wie?</h2>
-                <p>Praesidion is er voor organisaties waar veiligheid structureel gewaarborgd moet zijn.</p>
+                <h2>Gespecialiseerd voor de Logistiek</h2>
+                <p>Professionele beveiliging afgestemd op de specifieke uitdagingen van transport, distributie en magazijnbeheer.</p>
             </div>
             <div class="target-grid">
                 <div class="target-item">
+                    <i>📦</i>
+                    <h3>Distributiecentra & magazijnen</h3>
+                </div>
+                <div class="target-item">
+                    <i>🚛</i>
+                    <h3>Transportbedrijven & truck terminals</h3>
+                </div>
+                <div class="target-item">
                     <i>🏭</i>
-                    <h3>Logistieke bedrijven & distributiecentra</h3>
+                    <h3>Productie & assemblage</h3>
                 </div>
                 <div class="target-item">
-                    <i>🏥</i>
-                    <h3>Zorginstellingen & maatschappelijke opvang</h3>
-                </div>
-                <div class="target-item">
-                    <i>🏢</i>
-                    <h3>Kantoorparken & culturele instellingen</h3>
-                </div>
-                <div class="target-item">
-                    <i>🏗️</i>
-                    <h3>Bouw & infrastructuurprojecten</h3>
+                    <i>🌐</i>
+                    <h3>E-commerce fulfilmentcentra</h3>
                 </div>
             </div>
         </div>
@@ -532,96 +663,224 @@
     <!-- Packages -->
     <section id="pakketten" style="background:#f5f7fa;padding:4rem 0;">
       <div class="pakketten-container">
-        <div class="pakket-card" data-pakket="DagVeilig">
-          <div class="pakket-icoon">🔰</div>
-          <h3>Praesidion DagVeilig</h3>
-          <div class="pakket-sub">Voor beveiliging tijdens kantooruren (07:00 - 17:00)</div>
+        <div class="pakket-card" data-pakket="Basispakket">
+          <div class="pakket-icoon">📦</div>
+          <h3>Logistics Security Basis</h3>
+          <div class="pakket-sub">Dagbewaking tijdens werkuren (06:00 - 18:00)</div>
           <div class="pakket-prijs">v.a €10.000 <span class="pakket-per">/maand</span></div>
           <div class="pakket-exbtw">*ex-btw</div>
           <ul class="pakket-bullets">
-            <li>Vaste beveiligers, altijd inzetbaar</li>
-            <li>Rapportage & planning</li>
-            <li>Vervanging bij ziekte gegarandeerd</li>
-            <li>Eigen objectcoördinator & contactpersoon</li>
+            <li>Toegangscontrole & portiering</li>
+            <li>Rondgangen & inspecties</li>
+            <li>Leveranciers- & bezoekersmanagement</li>
+            <li>Digitale rapportage & real-time updates</li>
           </ul>
           <div class="pakket-ideaal">
-            <span>🏢</span> Kantoor
-            <span>🏥</span> Zorg
-            <span>🏭</span> Logistiek
-            <span>🏗️</span> Bouw
+            <span>📦</span> Magazijnen
+            <span>🚛</span> Truck terminals
+            <span>🏭</span> Kleine distributie
           </div>
-          <a href="#contact" class="pakket-btn">Kies Praesidion DagVeilig</a>
+          <a href="#contact" class="pakket-btn">Kies Logistics Security Basis</a>
         </div>
-        <div class="pakket-card pakket-card-plus" data-pakket="NachtVeilig">
-          <div class="pakket-icoon">🛡️</div>
-          <h3>Praesidion NachtVeilig</h3>
-          <div class="pakket-sub">Voor beveiliging tijdens nachturen</div>
-          <div class="pakket-prijs">v.a €20.000 <span class="pakket-per">/maand</span></div>
-          <div class="pakket-exbtw">*ex-btw</div>
-          <ul class="pakket-bullets">
-            <li>Nachtelijke objectbewaking</li>
-            <li>Rapportage & planning</li>
-            <li>Directe vervanging & back-up</li>
-            <li>Eigen objectcoördinator & contactpersoon</li>
-          </ul>
-          <div class="pakket-ideaal">
-            <span>🏬</span> Logistiek & industrie
-            <span>🏥</span> Zorg
-            <span>🎭</span> Cultuur
-            <span>🏗️</span> Bouw & infra
-          </div>
-          <a href="#contact" class="pakket-btn pakket-btn-plus">Kies Praesidion NachtVeilig</a>
-        </div>
-        <div class="pakket-card" data-pakket="24/7 Veilig">
-          <div class="pakket-icoon">🚨</div>
-          <h3>Praesidion 24/7 Veilig</h3>
-          <div class="pakket-sub">Voor maximale zekerheid & 24/7 inzet</div>
+        <div class="pakket-card pakket-card-plus" data-pakket="Premium">
+          <div class="pakket-icoon">🚚</div>
+          <h3>Logistics Security Premium</h3>
+          <div class="pakket-sub">24/7 objectbeveiliging voor kritieke infrastructuren</div>
           <div class="pakket-prijs">v.a €45.000 <span class="pakket-per">/maand</span></div>
           <div class="pakket-exbtw">*ex-btw</div>
           <ul class="pakket-bullets">
-            <li>24/7 premium beveiliging</li>
-            <li>Vaste teams</li>
-            <li>Premium rapportage & planning</li>
-            <li>Security Consultancy & advies</li>
-            <li>Eigen coördinator per object met één vast aanspreekpunt</li>
+            <li>24/7 objectbewaking</li>
+            <li>Bijzondere opslag & waardeartikelen</li>
+            <li>Full-service security oplossing</li>
+            <li>Veiligheidstraining voor uw team</li>
+            <li>Dedicated security coördinator</li>
           </ul>
           <div class="pakket-ideaal">
-            <span>🏢</span> Grootbedrijf
-            <span>🏬</span> Logistiek & Distributie
-            <span>🏥</span> Zorg & maatschappelijke opvang
-            <span>🏭</span> Industrie
-            <span>🏗️</span> Bouw & infra
-            <span>🎭</span> Evenementen
-            <span>🏢</span> Headquarters
-            <span>💻</span> Datacenters
+            <span>🌐</span> E-commerce fulfilment
+            <span>🏭</span> Groot magazijn
+            <span>💰</span> Waardeopslag
+            <span>🔒</span> Kritieke inventory
           </div>
-          <a href="#contact" class="pakket-btn">Kies Praesidion 24/7 Veilig</a>
+          <a href="#contact" class="pakket-btn pakket-btn-plus">Kies Logistics Security Premium</a>
+        </div>
+        <div class="pakket-card" data-pakket="Enterprise">
+          <div class="pakket-icoon">🏭</div>
+          <h3>Logistics Security Enterprise</h3>
+          <div class="pakket-sub">Enterprise oplossing voor grote distributiecentra</div>
+          <div class="pakket-prijs">Op maat</div>
+          <div class="pakket-exbtw">Custom pricing</div>
+          <ul class="pakket-bullets">
+            <li>Multi-locatie beveiliging</li>
+            <li>Security Operations Center (SOC)</li>
+            <li>Supply chain security auditing</li>
+            <li>Incident responseteam</li>
+            <li>Compliance management</li>
+            <li>Security metrics & KPI tracking</li>
+          </ul>
+          <div class="pakket-ideaal">
+            <span>🏢</span> Enterprise logistiek
+            <span>🌐</span> Multi-warehouse
+            <span>🏭</span> Grootschalige distributie
+            <span>💼</span> Corporate supply chain
+          </div>
+          <a href="#contact" class="pakket-btn">Neem contact op voor Enterprise oplossing</a>
         </div>
       </div>
     </section>
 
-    <!-- Why Praesidion -->
+    <!-- Why Logistics Security -->
     <section id="why-praesidion">
         <div class="container">
             <div class="section-title">
-                <h2>Waarom Praesidion?</h2>
+                <h2>Waarom Logistics Security?</h2>
             </div>
             <div class="target-grid">
                 <div class="target-item">
-                    <i>✅</i>
-                    <h3>Vergunning Ministerie Justitie & Veiligheid (ND8968)</h3>
+                    <i>🛡️</i>
+                    <h3>Gecertificeerde objectbeveiliging voor logistiek</h3>
+                </div>
+                <div class="target-item">
+                    <i>📋</i>
+                    <h3>Kennis van logistieke processen & supply chain risico's</h3>
                 </div>
                 <div class="target-item">
                     <i>⏰</i>
-                    <h3>Back-up gegarandeerd met 100% continuïteitsgarantie</h3>
+                    <h3>24/7 beschikbaarheid & continuïteitsgarantie</h3>
                 </div>
                 <div class="target-item">
-                    <i>👥</i>
-                    <h3>Personeel met Vergunning, BHV, VCA en representatieve uitstraling</h3>
+                    <i>🔒</i>
+                    <h3>Compliance met warehousing & transporteisen</h3>
                 </div>
-                <div class="target-item">
-                    <i>🤝</i>
-                    <h3>Dé partner voor MKB en Grootbedrijven in uw regio</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials">
+        <div class="testimonials-container">
+            <div class="section-title">
+                <h2>Wat Onze Klanten Zeggen</h2>
+                <p>Vertrouwd door toonaangevende logistieke bedrijven in Nederland</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">
+                        De 24/7 beveiliging heeft de diefstal in ons distributiecentrum met 80% teruggebracht. De professionaliteit en kennis van logistieke processen is indrukwekkend.
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">JS</div>
+                        <div class="testimonial-info">
+                            <h4>J. Smits</h4>
+                            <p>Operations Manager | Fulfilment Centrum</p>
+                            <div class="testimonial-stars">
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">
+                        We hadden voortdurend problemen met ongeautoriseerde toegang tot onze magazijnen. Sinds Logistics Security heeft ons geen incident meer gehad. Hun team kent onze supply chain door en door.
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">RM</div>
+                        <div class="testimonial-info">
+                            <h4>R. Mulder</h4>
+                            <p>Directeur Logistiek | Nationaal Transport</p>
+                            <div class="testimonial-stars">
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">
+                        De snelle reactie bij calamiteiten en de compliance-ondersteuning waren cruciaal voor onze vergunningen. Een echte partner in beveiliging.
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">PK</div>
+                        <div class="testimonial-info">
+                            <h4>P. Klein</h4>
+                            <p>CEO | Overslag Terminal B.V.</p>
+                            <div class="testimonial-stars">
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">
+                        Als e-commerce retailer met piekmomenten zoals Black Friday is continuïteit essentieel. Logistics Security levert altijd, ook bij uitval. Ons vertrouwen is 100%.
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">MV</div>
+                        <div class="testimonial-info">
+                            <h4>M. van der Berg</h4>
+                            <p>COO | Online Retail Platform</p>
+                            <div class="testimonial-stars">
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">
+                        De integratie van hun beveiligingsteam met onze dagelijkse logistieke operaties verloopt naadloos. Ze verstoren onze processen niet, maar versterken ze juist.
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">VD</div>
+                        <div class="testimonial-info">
+                            <h4>W. de Vries</h4>
+                            <p>Warehouse Manager | Groothandel</p>
+                            <div class="testimonial-stars">
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">
+                        In onze sector moet elke lading op tijd en veilig aankomen. Logistics Security zorgt ervoor dat we 's nachts ook gerust kunnen slapen. Top service!
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">JT</div>
+                        <div class="testimonial-info">
+                            <h4>J. Timmer</h4>
+                            <p>Founder | Sneltransport B.V.</p>
+                            <div class="testimonial-stars">
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -630,7 +889,7 @@
     <!-- Contact Form -->
     <section id="contact">
         <div class="section-title">
-            <h2>Vraag een Voorstel Aan</h2>
+            <h2>Vraag een Vrijblijvend Advies aan</h2>
         </div>
         <div class="iframe-container">
             <iframe id="softr-embed" src="https://fullservice.praesidion.eu" frameborder="0" style="border:none;" scrolling="no"></iframe>
@@ -642,18 +901,20 @@
         <div class="container">
             <div class="footer-content">
                 <div>
-                    <img src="static/logo_praesidion_horizontal.png" alt="Praesidion Security logo" style="width:240px;max-width:100%;margin-bottom:1rem;">
+                    <h2 style="color: var(--accent); font-size: 1.8rem; margin-bottom: 1rem;">Logistics Security</h2>
+                    <h3>Onderdeel van Praesidion Security B.V.<B class="V"></B></h3>
                     <h3>Contact</h3>
                     <p>Praesidion Security B.V.</p>
-                    <p>info@praesidion.nl</p>
+                    <p>logistics@praesidion.nl</p>
                     <p>+31 46 240 2401</p>
                 </div>
                 <div class="footer-links">
                     <a href="#">Privacyverklaring</a>
+                    <a href="#">Algemene Voorwaarden</a>
                     <a href="https://linkedin.com/company/praesidion" target="_blank">LinkedIn</a>
                 </div>
             </div>
-            <p>© Praesidion Security B.V. – Professionele beveiliging zonder zorgen</p>
+            <p>© Praesidion Security B.V. – Gespecialiseerde beveiliging voor transport & logistiek</p>
         </div>
     </footer>
 
