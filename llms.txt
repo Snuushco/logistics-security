@@ -9,3 +9,6 @@ Praesidion Security levert specialistische beveiligingsdiensten. Belangrijke pag
 - Beveiliging bedrijventerrein logistiek: https://logisticsecurity.nl/beveiliging-bedrijventerrein-logistiek/
 - Transportbeveiliging: https://logisticsecurity.nl/transportbeveiliging/
 - Beveiliging fulfilmentcentrum: https://logisticsecurity.nl/beveiliging-fulfilmentcentrum/
+
+## Blog
+- [Logistieke beveiliging zonder ruis: overdracht, planning en duidelijke instructies](https://logisticsecurity.nl/blog/logistieke-beveiliging-zonder-ruis-overdracht-planning/)
