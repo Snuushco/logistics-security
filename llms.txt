@@ -11,5 +11,6 @@ Praesidion Security levert specialistische beveiligingsdiensten. Belangrijke pag
 - Beveiliging fulfilmentcentrum: https://logisticsecurity.nl/beveiliging-fulfilmentcentrum/
 
 ## Blog
+- [Weerbare logistieke beveiliging in 2026: toegang, overdracht en continuïteit](https://logisticsecurity.nl/blog/weerbare-logistieke-beveiliging-2026-toegangscontrole-continuiteit/) — praktische duiding van Rijksoverheid-signalen over weerbaarheid, continuïteit, distributiecentra en logistieke beveiligingschecks; geen juridisch/compliance advies.
 - [Fake carriers en logistieke beveiliging: controleer toegang en afspraken](https://logisticsecurity.nl/blog/fake-carriers-logistieke-beveiliging-toegangscontrole/) — praktische duiding van CCV-berichtgeving over Stichting Fake-Carrier, toegangscontrole en escalatie op logistieke locaties.
 - [Logistieke beveiliging zonder ruis: overdracht, planning en duidelijke instructies](https://logisticsecurity.nl/blog/logistieke-beveiliging-zonder-ruis-overdracht-planning/)
