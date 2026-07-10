@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://logisticsecurity.nl/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://logisticsecurity.nl/logistieke-beveiliging-limburg/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://logisticsecurity.nl/beveiliging-distributiecentrum-venlo/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://logisticsecurity.nl/warehouse-beveiliging/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://logisticsecurity.nl/toegangscontrole-logistiek-centrum/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://logisticsecurity.nl/nachtbeveiliging-transportbedrijf/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://logisticsecurity.nl/beveiliging-bedrijventerrein-logistiek/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://logisticsecurity.nl/transportbeveiliging/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://logisticsecurity.nl/beveiliging-fulfilmentcentrum/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://logisticsecurity.nl/</loc><lastmod>2026-07-10</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://logisticsecurity.nl/logistieke-beveiliging-limburg/</loc><lastmod>2026-07-10</lastmod><changefreq>monthly</changefreq><priority>0.84</priority></url>
+  <url><loc>https://logisticsecurity.nl/beveiliging-distributiecentrum-venlo/</loc><lastmod>2026-07-10</lastmod><changefreq>monthly</changefreq><priority>0.84</priority></url>
+  <url><loc>https://logisticsecurity.nl/logistieke-beveiliging-sittard-geleen/</loc><lastmod>2026-07-10</lastmod><changefreq>monthly</changefreq><priority>0.84</priority></url>
+  <url><loc>https://logisticsecurity.nl/logistieke-beveiliging-roermond/</loc><lastmod>2026-07-10</lastmod><changefreq>monthly</changefreq><priority>0.84</priority></url>
+  <url><loc>https://logisticsecurity.nl/logistieke-beveiliging-weert/</loc><lastmod>2026-07-10</lastmod><changefreq>monthly</changefreq><priority>0.84</priority></url>
+  <url><loc>https://logisticsecurity.nl/logistieke-beveiliging-born-stein/</loc><lastmod>2026-07-10</lastmod><changefreq>monthly</changefreq><priority>0.84</priority></url>
+  <url><loc>https://logisticsecurity.nl/warehouse-beveiliging/</loc><lastmod>2026-07-10</lastmod><changefreq>monthly</changefreq><priority>0.82</priority></url>
+  <url><loc>https://logisticsecurity.nl/transportbeveiliging/</loc><lastmod>2026-07-10</lastmod><changefreq>monthly</changefreq><priority>0.82</priority></url>
+  <url><loc>https://logisticsecurity.nl/toegangscontrole-logistiek-centrum/</loc><lastmod>2026-07-10</lastmod><changefreq>monthly</changefreq><priority>0.82</priority></url>
+  <url><loc>https://logisticsecurity.nl/nachtbeveiliging-transportbedrijf/</loc><lastmod>2026-07-10</lastmod><changefreq>monthly</changefreq><priority>0.82</priority></url>
+  <url><loc>https://logisticsecurity.nl/beveiliging-bedrijventerrein-logistiek/</loc><lastmod>2026-07-10</lastmod><changefreq>monthly</changefreq><priority>0.82</priority></url>
+  <url><loc>https://logisticsecurity.nl/beveiliging-fulfilmentcentrum/</loc><lastmod>2026-07-10</lastmod><changefreq>monthly</changefreq><priority>0.82</priority></url>
   <url><loc>https://logisticsecurity.nl/blog/</loc><lastmod>2026-07-10</lastmod><changefreq>weekly</changefreq><priority>0.70</priority></url>
   <url><loc>https://logisticsecurity.nl/blog/logistieke-beveiliging-zonder-ruis-overdracht-planning/</loc><lastmod>2026-06-25</lastmod><changefreq>monthly</changefreq><priority>0.68</priority></url>
   <url><loc>https://logisticsecurity.nl/blog/fake-carriers-logistieke-beveiliging-toegangscontrole/</loc><lastmod>2026-07-02</lastmod><changefreq>monthly</changefreq><priority>0.68</priority></url>

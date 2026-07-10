@@ -1,17 +1,29 @@
 # logisticsecurity.nl
 
-Praesidion Security levert specialistische beveiligingsdiensten. Belangrijke pagina's:
-- Logistieke beveiliging Limburg: https://logisticsecurity.nl/logistieke-beveiliging-limburg/
-- Beveiliging distributiecentrum Venlo: https://logisticsecurity.nl/beveiliging-distributiecentrum-venlo/
-- Warehouse beveiliging: https://logisticsecurity.nl/warehouse-beveiliging/
-- Toegangscontrole logistiek centrum: https://logisticsecurity.nl/toegangscontrole-logistiek-centrum/
-- Nachtbeveiliging transportbedrijf: https://logisticsecurity.nl/nachtbeveiliging-transportbedrijf/
-- Beveiliging bedrijventerrein logistiek: https://logisticsecurity.nl/beveiliging-bedrijventerrein-logistiek/
-- Transportbeveiliging: https://logisticsecurity.nl/transportbeveiliging/
-- Beveiliging fulfilmentcentrum: https://logisticsecurity.nl/beveiliging-fulfilmentcentrum/
+Logisticsecurity.nl beschrijft logistieke beveiligingsvragen voor warehouses, distributiecentra, transportbedrijven, fulfilmentlocaties en logistieke bedrijventerreinen. Praesidion Security B.V. blijft de brede uitvoerende beveiligingsorganisatie via https://www.praesidion.eu/; logisticsecurity.nl bezit de logistieke intenties en verwijst intakevragen door naar Praesidion.
+
+## Regionale pagina's
+- Logistieke beveiliging Limburg: https://logisticsecurity.nl/logistieke-beveiliging-limburg/ — Logistieke beveiliging in Limburg voor warehouses, distributiecentra en transportlocaties, met een locatiegerichte risicoanalyse en heldere werkafspraken.
+- Logistieke beveiliging Venlo en Trade Port: https://logisticsecurity.nl/beveiliging-distributiecentrum-venlo/ — Beveiliging voor distributiecentra en warehouses in Venlo en de Trade Port-regio, gericht op poort, docks, chauffeursstromen en terreincontrole.
+- Logistieke beveiliging Sittard-Geleen en Holtum: https://logisticsecurity.nl/logistieke-beveiliging-sittard-geleen/ — Locatiegerichte logistieke beveiliging in Sittard-Geleen en Holtum voor transportterreinen, warehouses, contractors en wisselende goederenstromen.
+- Logistieke beveiliging Roermond: https://logisticsecurity.nl/logistieke-beveiliging-roermond/ — Logistieke beveiliging in Roermond voor warehouses en transportterreinen, afgestemd op A73/N280-verkeer, toegang, docks en avonduren.
+- Logistieke beveiliging Weert: https://logisticsecurity.nl/logistieke-beveiliging-weert/ — Beveiliging voor logistieke locaties in Weert, met aandacht voor regionale transportstromen, compacte terreinen, nachtelijke aankomst en overdracht.
+- Logistieke beveiliging Born en Stein: https://logisticsecurity.nl/logistieke-beveiliging-born-stein/ — Logistieke beveiliging in Born en Stein voor transport- en industrieterreinen, met zonering, contractorcontrole, buitenterrein en daluren.
+
+## Dienstpagina's
+- Warehouse beveiliging: https://logisticsecurity.nl/warehouse-beveiliging/ — Warehouse beveiliging gericht op goederenontvangst, interne zones, docks, sleutels en sluitcontrole, afgestemd op uw opslagproces.
+- Transportbeveiliging op en rond de logistieke locatie: https://logisticsecurity.nl/transportbeveiliging/ — Transportbeveiliging voor vertrek, aankomst, chauffeurscontrole, voertuiggegevens en terreinprocessen rond warehouses en transportbedrijven.
+- Toegangscontrole voor logistieke centra: https://logisticsecurity.nl/toegangscontrole-logistiek-centrum/ — Toegangscontrole voor logistieke centra met vooraanmelding, identiteitscontrole, voertuigverificatie, bezoekersroutes en beheersbare uitzonderingen.
+- Nachtbeveiliging voor transportbedrijven: https://logisticsecurity.nl/nachtbeveiliging-transportbedrijf/ — Nachtbeveiliging voor transportbedrijven met overdracht, terreinrondes, poortafspraken en opvolging van afwijkingen buiten de kernbezetting.
+- Beveiliging van logistieke bedrijventerreinen: https://logisticsecurity.nl/beveiliging-bedrijventerrein-logistiek/ — Beveiliging van logistieke bedrijventerreinen met heldere grenzen tussen gedeelde route, huurders, parkeerzones, rondes en individuele opvolging.
+- Beveiliging voor fulfilmentcentra: https://logisticsecurity.nl/beveiliging-fulfilmentcentrum/ — Beveiliging voor fulfilmentcentra met aandacht voor snelle orderstromen, retouren, tijdelijke medewerkers, interne zones en cut-offmomenten.
+
+## Grenzen
+Gebieds- en bedrijventerreinnamen zijn geografische context. De site claimt geen klanten, cases, samenwerkingen, garanties, certificeringen, responstijden of rankings.
 
 ## Blog
-- [Inzetgereed vóór de dienst: operationele checks voor logistieke beveiliging](https://logisticsecurity.nl/blog/inzetgereed-voor-de-dienst-logistieke-beveiliging/) — actueel politiebericht over havencontroles vertaald naar praktische checks voor inzetgegevens, instructies en overdracht; geen juridisch/compliance advies.
-- [Weerbare logistieke beveiliging in 2026: toegang, overdracht en continuïteit](https://logisticsecurity.nl/blog/weerbare-logistieke-beveiliging-2026-toegangscontrole-continuiteit/) — praktische duiding van Rijksoverheid-signalen over weerbaarheid, continuïteit, distributiecentra en logistieke beveiligingschecks; geen juridisch/compliance advies.
-- [Fake carriers en logistieke beveiliging: controleer toegang en afspraken](https://logisticsecurity.nl/blog/fake-carriers-logistieke-beveiliging-toegangscontrole/) — praktische duiding van CCV-berichtgeving over Stichting Fake-Carrier, toegangscontrole en escalatie op logistieke locaties.
-- [Logistieke beveiliging zonder ruis: overdracht, planning en duidelijke instructies](https://logisticsecurity.nl/blog/logistieke-beveiliging-zonder-ruis-overdracht-planning/)
+- Kennisbank logistieke beveiliging: https://logisticsecurity.nl/blog/ — Praktische artikelen over logistieke beveiliging, toegangscontrole, overdracht en continuïteit.
+- Logistieke beveiliging zonder ruis: overdracht en planning: https://logisticsecurity.nl/blog/logistieke-beveiliging-zonder-ruis-overdracht-planning/ — Praktische uitleg over overdracht, planning en duidelijke instructies.
+- Fake carriers: controleer toegang en afspraken: https://logisticsecurity.nl/blog/fake-carriers-logistieke-beveiliging-toegangscontrole/ — Duiding van fake-carrierrisico's, toegangscontrole en escalatie.
+- Weerbare logistieke beveiliging in 2026: https://logisticsecurity.nl/blog/weerbare-logistieke-beveiliging-2026-toegangscontrole-continuiteit/ — Praktische checks voor toegang, overdracht en continuïteit.
+- Inzetgereed vóór de dienst: https://logisticsecurity.nl/blog/inzetgereed-voor-de-dienst-logistieke-beveiliging/ — Operationele checks voor inzetgegevens, instructies en overdracht.
