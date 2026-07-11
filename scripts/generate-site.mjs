@@ -50,6 +50,7 @@ function head({ title, description, canonical, type = "website", jsonLd }) {
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;650;750;900&display=swap" rel="stylesheet">
 <style>${css}</style>
 <script type="application/ld+json">${JSON.stringify(jsonLd)}</script>
+<script defer src="/analytics.js"></script>
 </head>`;
 }
 
