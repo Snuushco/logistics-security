@@ -27,3 +27,4 @@ Gebieds- en bedrijventerreinnamen zijn geografische context. De site claimt geen
 - Fake carriers: controleer toegang en afspraken: https://logisticsecurity.nl/blog/fake-carriers-logistieke-beveiliging-toegangscontrole/ — Duiding van fake-carrierrisico's, toegangscontrole en escalatie.
 - Weerbare logistieke beveiliging in 2026: https://logisticsecurity.nl/blog/weerbare-logistieke-beveiliging-2026-toegangscontrole-continuiteit/ — Praktische checks voor toegang, overdracht en continuïteit.
 - Inzetgereed vóór de dienst: https://logisticsecurity.nl/blog/inzetgereed-voor-de-dienst-logistieke-beveiliging/ — Operationele checks voor inzetgegevens, instructies en overdracht.
+- Veilige IP-camera's in warehouses: https://logisticsecurity.nl/blog/veilige-ip-camera-warehouse-beheerafspraken/ — Beheerafspraken voor netwerktoegang, accounts, wijzigingen, storingen en fysieke opvolging bij poort, dock en buitenterrein, gebaseerd op AIVD/MIVD-advies van 10 juli 2026.
